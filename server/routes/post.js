@@ -39,8 +39,7 @@ router.post('/createpost',requireLogin,(req,res)=>{
         return res.status(422).json({error:"Please filled all fields"})
 
     }
-    // console.log(req.user)
-    // res.send("ok")
+    
     req.user.password=undefined
     const post=new Post({
         title,
