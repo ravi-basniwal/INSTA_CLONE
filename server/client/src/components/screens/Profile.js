@@ -96,9 +96,9 @@ const Profile = () => {
         </div>
       </div>
         </div>
-        <div style={{width:"55%", padding:"6px"}} >
+        <div style={{width:"55%", padding:"6px" ,marginTop:"33px" }} >
           <h4 style={{textAlign:"center"}}>{state?state.name:"loading"}</h4>
-          <h5 style={{fontSize:"80%",textAlign:"center"}}>{state?state.email:"loading"}</h5>
+          {/* <h5 style={{fontSize:"80%",textAlign:"center"}}>{state?state.email:"loading"}</h5> */}
           <div
             style={{
               display: "flex",

@@ -116,7 +116,7 @@ const Signin = () => {
             {/* <a className="grey-text text-lighten-4 right" href="/">
               More
             </a> */}
-            <Link to="/" lassName="grey-text text-lighten-4 right">ZePal</Link>
+            <Link to="/" className="grey-text text-lighten-4 right">ZePal</Link>
           </div>
         </div>
       </footer>

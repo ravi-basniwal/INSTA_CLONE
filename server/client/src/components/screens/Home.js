@@ -197,6 +197,7 @@ const Home = () => {
                 )}
               </div>
             </h5>
+            <h6 id="homo">{item.title}</h6>
             <div className="card-image">
               <img src={item.photo} />
               <div className="card-content">
@@ -222,8 +223,8 @@ const Home = () => {
                 )}
 
                 <h6>{item.likes.length} likes</h6>
-                <h6>{item.title}</h6>
-                <p>{item.body}</p>
+                
+                <h6>{item.body}</h6>
 
                 {item.comments.map((record) => {
                   return (
@@ -316,7 +317,7 @@ const Home = () => {
             {/* <a className="grey-text text-lighten-4 right" href="/">
               More
             </a> */}
-            <Link to="/" lassName="grey-text text-lighten-4 right">ZePal</Link>
+            <Link to="/" >ZePal</Link>
           </div>
         </div>
       </footer>
