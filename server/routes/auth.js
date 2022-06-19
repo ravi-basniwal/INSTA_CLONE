@@ -6,17 +6,17 @@ const bcrypt=require('bcryptjs')
 const jwt=require('jsonwebtoken')
 const {JWT_SECRET}=require('../config/keys')
 const requireLogin=require("../middleware/requireLogin")
-const nodemailer = require('nodemailer')
-const sendgridTransposrt = require('nodemailer-sendgrid-transport')
+// const nodemailer = require('nodemailer')
+// const sendgridTransposrt = require('nodemailer-sendgrid-transport')
 // router.get('/protected',requireLogin,(req,res)=>{
 //   res.send("hello user")
 // })
 // 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
-const transporter = nodemailer.createTransport(sendgridTransposrt({
-  auth:{
-    api_key:"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"
-  }
-}))
+// const transporter = nodemailer.createTransport(sendgridTransposrt({
+//   auth:{
+//     api_key:"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"
+//   }
+// }))
 router.post('/signup',(req,res)=>{
  const {name,email,password,pic} = req.body
  if(!email || !password  || !name)
